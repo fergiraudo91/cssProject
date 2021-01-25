@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+h1{    
+    font-family: 'Ranchers', cursive;
+}
+main{
+    min-height: calc(100vh - 3rem - 8.1rem);
+}
+
+.backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+    left: 0;
+    display: none;
+}
+
+.main-header{
+    background: orange;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    z-index: 60;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav__item{
+    margin: 0 1rem;
+    
+}
+.main-nav__item a,
+.mobile-nav__item a{
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0px;
+    
+}
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: white;
+    text-decoration: none;
+    border-bottom: 5px solid white;    
+}
+
+.main-nav{
+    display: none;
+}
+
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+    margin-bottom: 0.3rem;
+    display: flex;
+    
+    
+}
+.main-header__brand{
+    color: brown;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: inherit;
+}
+.main-header__brand img{
+    height: 2.5rem;
+    vertical-align: middle;
+
+}
+
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
+
+  @media(min-width: 45rem){
+      .toggle-button{
+          display: none;
+      }
+      .main-nav{
+          display: inline-block;
+      }
+  }
+  
+
+
+
+.main-nav__item--cta a,
+.mobile-nav__item--cta a{
+    color: white;
+    background: tomato;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta:hover,
+.mobile-nav__item--cta:active{
+    color: tomato;
+    background: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.button{
+    background: #082c2e; 
+    border: 1.5px solid #082c2e ;
+    font: inherit;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active{
+    background: white;
+    color: #082c2e;
+}
+button:focus{
+    outline: none;
+}
+
+.mobile-nav {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 80%;
+    height: 100vh;
+    transition: transform 500ms ease-out;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+  .open{
+      display: block !important;
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+  }
+  .main-footer{
+    background: black;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.main-footer__links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-footer__link{
+    margin: 0.5rem 0;
+}
+
+.main-footer__link a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active{
+    color: #CCC;
+}
+
+@media(min-width: 45rem){
+    .main-footer__link{
+        margin: 0 1rem;
+    }
+
+    .main-footer__links{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color : green;
+    font-family : sans-serif;
+}
+
+code {
+    color : red;
+    font-family : inherit;
+}
+
+.magenta code{
+    color : magenta;
+}
+
+#first ~ li {
+    color : white;
+    background-color: black;
+}
+
+ol {
+    color : white;
+    background-color: black;
+}

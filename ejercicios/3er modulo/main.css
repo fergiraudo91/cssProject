@@ -1,0 +1,17 @@
+.nice-box-1{
+    padding: 10px 20px 15px 25px;
+    margin: 5px 10px 15px 20px;
+    border: 2px solid orange;
+    display: inline-block;
+    display: none;
+}
+
+.nice-box-2{
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+}
+
+.nice-box-2:hover{
+    background: lightblue;
+}

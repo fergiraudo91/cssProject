@@ -1,0 +1,112 @@
+.signup-page{
+    padding-top: 30px;
+    margin: auto;
+    padding: 1rem;
+    padding-right: 2.5rem;
+}
+.signup-page label{
+    font-weight: bold;
+}
+
+form{
+    margin: auto;
+}
+
+.signup-form{
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
+}
+
+.signup-title{
+    text-align: center;
+    color: green;
+    font-family: inherit;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.signup-page label,
+.signup-page select,
+.signup-page input:not([type="checkbox"]){
+    display: block;
+    width: 100%;
+    /*margin: 1rem;*/
+}
+
+.signup-page select,
+.signup-page input:not([type="checkbox"]){
+    padding: 0.3rem;
+    font: inherit;
+    border: 1px solid #cccccc;
+}
+
+.signup-page select:focus,
+.signup-page input:focus{
+    outline: none;
+    border: 1px solid #006400;
+    background: lightgreen;
+}
+
+.signup-page input[type="checkbox"],
+.signup-page .agree-terms{
+    display: inline-block;
+    width: 10%;
+    padding-left: 0;
+    margin: 0;
+    /*margin-left: 1rem;
+    margin-top: 1rem;*/
+}
+
+.signup-page input[type="checkbox"]{
+    border: 1px solid #cccccc;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    -webkit-appearance: none;
+}
+
+.signup-page input[type="checkbox"]:checked{
+    border: 1px solid #006400;
+    background: lightgreen;
+    content: '1';
+    font: inherit;
+}
+
+.signup-page .agree-terms{
+    width: 70%;
+    margin: 0;
+}
+
+.button{
+    /*margin-top: 1rem;*/
+    display: block;
+    /*margin-left: 1rem;*/
+}
+
+@media(min-width: 45rem){
+    .signup-page{
+        width: 30rem;
+        font-weight: 400;
+    }
+    .signup-page label{
+        font-weight: normal;
+    }
+
+    .signup-form{
+        margin: auto;
+        width: 30rem;
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 1rem;
+    }
+
+    .checkbox-item{
+        grid-column: span 2;
+    }
+    .signup-form #title{
+        grid-column: span 2;
+        
+    }
+    
+}
